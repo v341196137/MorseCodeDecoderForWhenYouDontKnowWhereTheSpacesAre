@@ -1,4 +1,3 @@
-package MorseCodeDecoderForWhenYouDontKnowWhereTheSpacesAre;
 import java.util.*;
 class Main{
     static String[] letters = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---",
