@@ -1,3 +1,4 @@
+package MorseCodeDecoderForWhenYouDontKnowWhereTheSpacesAre;
 import java.util.*;
 class Main{
     static String[] letters = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---",
@@ -14,7 +15,7 @@ class Main{
         if(coded.length() == 0){
             return true;
         }else{
-            //TODO: loop through letters and numbers, then do recursive calls to find stuff and hope DFS is enough
+            //TODO: loop through letters and numbers, then do recursive calls to find stuff and hope DFS is
         }
         return false;
     }
