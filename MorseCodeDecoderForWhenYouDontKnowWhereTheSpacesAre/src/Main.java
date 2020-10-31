@@ -3,19 +3,34 @@ class Main{
     static String[] letters = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---",
 ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
     static String[] numbers = {"-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----."};
-    static Set<String> possible = new HashSet<String>();
+    static ArrayList<String> possible = new ArrayList<String>();
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         String coded = in.next();
-        pain(coded);
+        pain(coded, "");
         in.close();
+        Collections.sort(possible);
+        for(String s:possible){
+            System.out.println(s);
+        }
     }
-    public static boolean pain(String coded){
+    public static boolean pain(String coded, String curString){
         if(coded.length() == 0){
+            possible.add(curString);
             return true;
         }else{
-            //TODO: loop through letters and numbers, then do recursive calls to find stuff and hope DFS is
+            boolean thing = false;
+            for(int i = 0; i < letters.length;i++){
+                if((letters[i].length() <= coded.length()) && (coded.substring(0, letters[i].length()).equals(letters[i]))){
+                    thing = pain(coded.substring(letters[i].length()), curString + (char)(i + 'A'));
+                }
+            }
+            for(int i = 0; i < numbers.length;i++){
+                if((numbers[i].length() <= coded.length()) && (coded.substring(0, numbers[i].length()).equals(numbers[i]))){
+                    thing = pain(coded.substring(numbers[i].length()), curString + (char)(i + '0'));
+                }
+            }
+            return thing;
         }
-        return false;
     }
 }
