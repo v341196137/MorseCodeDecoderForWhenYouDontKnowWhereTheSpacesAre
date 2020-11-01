@@ -6,7 +6,14 @@ class Main{
     static ArrayList<String> possible = new ArrayList<String>();
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
+        System.out.println("Enter some valid Morse code without spaces:");
         String coded = in.next();
+        for(int i = 0;i < coded.length();i++){
+            if(coded.charAt(i) != '.' && coded.charAt(i) != '-'){
+                System.out.println("Invalid Morse Code");
+                System.exit(0);
+            }
+        }
         pain(coded, "");
         in.close();
         Collections.sort(possible);
