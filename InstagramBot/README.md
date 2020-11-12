@@ -9,4 +9,4 @@ Clearly actually scrolling through Instagram to like posts is a huge waste of ti
 - [X] Make bot able to like posts
 - [ ] Make bot able to like all new posts
 - [ ] Make bot speed through stories (oof image processing)
-- [ ] Potentially add a selenium web driver for automated sign in
+- [ ] Potentially add a selenium web driver for automated sign in and probably make a selenium version
