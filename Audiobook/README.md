@@ -6,6 +6,7 @@ Here's a few lines of code that will read the Bee Movie script to to you. You ca
 - [ ] Give user settings to change speed
 - [ ] Change volume options
 - [ ] Create a option to save audiobook to a mp3 file
+- [ ] Give a thing to show how much has been finished
 ## Resources:
 * <a href = "https://web.njit.edu/~cm395/theBeeMovieScript/">The Bee Movie script</a>
 * <a href = "https://pyttsx3.readthedocs.io/en/latest/engine.html">Documentation</a>
