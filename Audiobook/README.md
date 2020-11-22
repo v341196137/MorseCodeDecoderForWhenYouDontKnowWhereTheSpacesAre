@@ -7,6 +7,7 @@ Here's a few lines of code that will read the Bee Movie script to to you. You ca
 - [ ] Change volume options
 - [ ] Create a option to save audiobook to a mp3 file
 - [ ] Give a thing to show how much has been finished
+- [ ] Bookmark file to keep track of which line and which word is to be read
 ## Resources:
 * <a href = "https://web.njit.edu/~cm395/theBeeMovieScript/">The Bee Movie script</a>
 * <a href = "https://pyttsx3.readthedocs.io/en/latest/engine.html">Documentation</a>
