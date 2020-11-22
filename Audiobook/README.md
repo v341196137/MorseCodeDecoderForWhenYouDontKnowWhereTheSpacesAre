@@ -2,6 +2,7 @@
 ## Description:
 Here's a few lines of code that will read the Bee Movie script to to you. You can update file to any raw text and it will read that to you
 ## TODO:
+- [ ] User input to choose which file to read
 - [ ] Give user settings to change voice
 - [ ] Give user settings to change speed
 - [ ] Change volume options
