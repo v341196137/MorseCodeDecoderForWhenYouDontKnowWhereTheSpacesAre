@@ -37,7 +37,13 @@ class ObjectivelyBetterTkWindow(Tk):
         return self.r, self.g, self.b
 
 def search_results():
-    pass
+    bot = webdriver.Firefox()
+    bot.get("https://duckduckgo.com/") # web browser superiority XD
+    time.sleep(1)
+    search_bar = bot.find_element_by_id("search_form_input_homepage")
+    search_bar.clear()
+    search_bar.send_keys(entry.get())
+    search_bar.send_keys(Keys.RETURN)
 
 def rgb_to_hex(rgb):
     """changes rgb values to hex
@@ -56,11 +62,8 @@ window.geometry("450x200")
 search = Label(window, text = "type search stuff here", font = ("Comic Sans MS", 15))
 search.place(x = 10, y = 10)
 
-entries = []
-entries.append(Entry(window))
-for i in range(len(entries)):
-    entry = entries[i]
-    entry.place(x = 250, y = i*10 + 10)
+entry = Entry(window)
+entry.place(x = 250, y = 10)
 
 search_button = Button(window, text = "search", command = search_results, width = 12, bg = rgb_to_hex(window.get_rgb()))
 search_button.place(x = 150, y = 150)
