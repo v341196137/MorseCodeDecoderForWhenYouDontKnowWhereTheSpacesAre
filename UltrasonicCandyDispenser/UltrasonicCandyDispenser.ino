@@ -27,7 +27,7 @@
 
 const float SPEED_OF_SOUND = 0.034; // sound travels at 343m/s at 20°C which is roughly 0.034 in centimeters
 const int STEPS_PER_REVOLUTION = 2038; // number of steps it will take to form one full circle
-const int steps[] = {340, 340, 399};
+const int STEPS[] = {340, 340, 399};
 
 Stepper stepperMotor(STEPS_PER_REVOLUTION, in1, in2, in3, in4);
 
@@ -79,7 +79,7 @@ float getDistance() {
 
 void dispenseCandy() {
   // moves the stepper motor by a precalculated amount to get a candy out
-  stepperMotor.step(steps[pointer]);
+  stepperMotor.step(STEPS[pointer]);
   pointer++;
-  pointer %= sizeof(steps);
+  pointer %= sizeof(STEPS);
 }
