@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 screen = pygame.display.set_mode((790, 300))
-pygame.display.set_caption("Hello, World!")
+pygame.display.set_caption("Map Maker")
 running = True
 
 world = []
