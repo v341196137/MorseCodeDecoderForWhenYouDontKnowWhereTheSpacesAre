@@ -13,6 +13,7 @@ There are key bindings for drawing each aspect of the room. Use the mouse to dra
 |V|Draws a vertical wall `|` (must click each individual part)|
 |H|Draws a horizontal wall `-` (must click each individual part)|
 |I|Draws an inside the room character `.` (must click each individual part)|
+
 Upon quitting the program, the program will output the map to a file called `world.txt`.
 
 Here are some examples:
