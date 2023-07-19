@@ -13,3 +13,4 @@ Sorted by date of creation (earliest first)
 |[SpamBot](./SpamBot)|a bot that spams|Python|Complete|
 |[Extreme URL Encoding](./Extreme%20URL%20Encoding)|overly encodes texts to URL format (percent format)|Python|Questionable Functionality|
 |[Ultrasonic Candy Dispenser](./UltrasonicCandyDispenser)|a non contact candy dispenser|Arduino|Complete|
+|[MapMaker](./MapMaker/)|a graphical map making program to make CS 246 easier|Python|Complete|
