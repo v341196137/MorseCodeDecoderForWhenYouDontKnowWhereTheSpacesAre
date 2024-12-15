@@ -14,3 +14,4 @@ Sorted by date of creation (earliest first)
 |[Extreme URL Encoding](./Extreme%20URL%20Encoding)|overly encodes texts to URL format (percent format)|Python|Questionable Functionality|
 |[Ultrasonic Candy Dispenser](./UltrasonicCandyDispenser)|a non contact candy dispenser|Arduino|Complete|
 |[MapMaker](./MapMaker/)|a graphical map making program to make CS 246 easier|Python|Complete|
+|[Certificate Generator](./Certificate%20Generator/)|script for generating an image certificate|Python|Complete|
